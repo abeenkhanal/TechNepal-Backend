@@ -34,7 +34,7 @@ app.use(cors({
 // }))
 require('dotenv').config()
 //database connection
-connectDatabase(process.env.MONGO_URI)
+connectDatabase('mongodb+srv://abeenkhanal16:abeenkhanal16@cluster0.jal6z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 app.use(express.json())
 app.use(express.urlencoded ({extended : true}))
